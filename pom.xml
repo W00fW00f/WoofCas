@@ -20,12 +20,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.snatik</groupId>
-            <artifactId>snatik</artifactId>
-            <version>1.0</version>
+            <groupId>com.snatik.polygon</groupId>
+            <artifactId>polygon</artifactId>
+            <version>1.0.2</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/polygon-1.0.2.jar</systemPath>
-            <type>jar</type>
+            <systemPath>${basedir}/src/main/resources/polygon-1.0.2.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
