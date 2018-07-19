@@ -2,7 +2,7 @@ package com.woof.cas.model;
 
 import java.util.Objects;
 
-public class Vehicle {
+public class Vehicle implements Comparable<Vehicle> {
 
     private String vin;
     private String serviceAddress;
@@ -53,5 +53,10 @@ public class Vehicle {
                 "vin='" + vin + '\'' +
                 ", serviceAddress='" + serviceAddress + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Vehicle vehicle) {
+        return this.vin.compareTo(vehicle.getVin());
     }
 }
