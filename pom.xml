@@ -20,11 +20,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.snatik</groupId>
-            <artifactId>snatik</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/polygon-1.0.2.jar</systemPath>
+            <groupId>com.snatik.polygon</groupId>
+            <artifactId>polygon</artifactId>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -56,12 +54,20 @@
             <id>spring-releases</id>
             <url>https://repo.spring.io/libs-release</url>
         </repository>
+        <repository>
+            <id>polygon</id>
+            <url>https://raw.githubusercontent.com/W00fW00f/polygon/master</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>
         <pluginRepository>
             <id>spring-releases</id>
             <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>polygon</id>
+            <url>https://raw.githubusercontent.com/W00fW00f/polygon/master</url>
         </pluginRepository>
     </pluginRepositories>
 
