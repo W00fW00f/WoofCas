@@ -20,11 +20,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.snatik.polygon</groupId>
-            <artifactId>polygon</artifactId>
+            <groupId>com.github.sromku</groupId>
+            <artifactId>polygon-contains-point</artifactId>
             <version>1.0.2</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/src/main/resources/polygon-1.0.2.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -55,6 +53,10 @@
         <repository>
             <id>spring-releases</id>
             <url>https://repo.spring.io/libs-release</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
