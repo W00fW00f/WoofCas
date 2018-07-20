@@ -1,5 +1,6 @@
 package com.woof.cas.model;
 
+import com.snatik.polygon.Line;
 import com.snatik.polygon.Point;
 import com.snatik.polygon.Polygon;
 
@@ -31,6 +32,14 @@ public class Lane {
     }
 
     public boolean contains(Point point) {
+        List<Line> sides = polyline.getSides();
+
+        for (Line side : sides) {
+            if (side.isInside(point)) {
+                return true;
+            }
+        }
+
         return polyline.contains(point);
     }
 }

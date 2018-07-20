@@ -37,6 +37,14 @@ public class Intersection {
     }
 
     public boolean contains(Point point) {
+        List<Line> sides = polyline.getSides();
+
+        for (Line side : sides) {
+            if (side.isInside(point)) {
+                return true;
+            }
+        }
+
         return polyline.contains(point);
     }
 

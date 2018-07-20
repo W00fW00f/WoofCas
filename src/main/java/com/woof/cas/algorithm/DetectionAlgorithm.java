@@ -118,6 +118,7 @@ public class DetectionAlgorithm {
                     for (RuleEntry ruleEntry : currentRule.getEntries()) {
                         if (ruleEntry.getHighPriorityRoad() == lane1 &&
                             ruleEntry.getLowPriorityRoad() == lane2) {
+
                             System.out.println("Car " + entry1.getKey() + " warn!");
                             System.out.println("Car " + entry2.getKey() + " stop!");
                         }
